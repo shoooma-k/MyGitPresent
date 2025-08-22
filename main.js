@@ -180,7 +180,7 @@
             gogoLamp.classList.add('dim');
             gogoLamp.classList.remove('glow');
 
-            if ([panel1Pattern, panel2Pattern, panel3Pattern].every(x => x === 'file:///Users/kajishoma/Desktop/MyVisitLog/SlotImg/grape.png')) {
+            if ([panel1Pattern, panel2Pattern, panel3Pattern].every(src => src.toLowerCase().endsWith('slotimg/grape.png'))) {
               if (bonusCounter === bonusEnd) {
                 bonus = false;
                 console.log(`ボーナス${bonus}`);
@@ -204,7 +204,7 @@
               janbariCounter++;
               console.log(`ジャンバリカウンター${janbariCounter}`);
             }
-            if ([panel1Pattern, panel2Pattern, panel3Pattern].every(x => x === 'file:///Users/kajishoma/Desktop/MyVisitLog/SlotImg/seven.png')) {
+            if ([panel1Pattern, panel2Pattern, panel3Pattern].every(src => src.toLowerCase().endsWith('slotimg/seven.png'))) {
               if (normalCounter === 2) {
                 janbari = true;
                 console.log(`ジャンバリ${janbari}`);
@@ -217,7 +217,7 @@
                 bonusSe.play();
               }
             } else {
-              if ([panel1Pattern, panel2Pattern, panel3Pattern].every(x => x === 'file:///Users/kajishoma/Desktop/MyVisitLog/SlotImg/grape.png')) {
+              if ([panel1Pattern, panel2Pattern, panel3Pattern].every(src => src.toLowerCase().endsWith('slotimg/grape.png'))) {
               } else {
                 if (bonus === false) {
                   if (janbari === false) {
