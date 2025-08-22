@@ -104,16 +104,16 @@
     let clownCounter;
 
 
-    const gogoSe = new Audio('SlotMp3/ジャグラー ペカリ 効果音.mp3');
+    const gogoSe = new Audio('SlotMp3/JugglerGogo.mp3');
     gogoSe.preload = 'auto';
-    const bonusSe = new Audio('SlotMp3/ジャグラーボーナス中.mp3');
+    const bonusSe = new Audio('SlotMp3/JugglerBonus.mp3');
     bonusSe.preload = 'auto';
     bonusSe.loop = true;
-    const stopSe = new Audio('SlotMp3/ジャグラー ボタン .mp3');
+    const stopSe = new Audio('SlotMp3/JugglerButton.mp3');
     stopSe.preload = 'auto';
-    const bonusEndSe = new Audio('SlotMp3/ジャグラーボーナス終.mp3');
+    const bonusEndSe = new Audio('SlotMp3/JugglerBonusEnd.mp3');
     stopSe.preload = 'auto';
-    const janbariSe = new Audio('SlotMp3/ジャグラー ジャンバリ .mp3');
+    const janbariSe = new Audio('SlotMp3/JugglerJanbari.mp3');
     stopSe.preload = 'auto';
     janbariSe.loop = true;
 
@@ -306,7 +306,7 @@
     const gogoProbability = 10;
 
     const spin = document.getElementById('spin');
-    const spinSe = new Audio('SlotMp3/ジャグラー レバー.mp3');
+    const spinSe = new Audio('SlotMp3/JugglerLever.mp3');
     spinSe.preload = 'auto';
     spin.addEventListener('click', () => {
       if (spin.classList.contains('inactive')) {
