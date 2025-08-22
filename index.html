@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Log</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="mask">
+  <main>
+    <section id="login-page" hidden>
+      <h1>Who are you?</h1>
+      <ul id="members">
+        <li>
+          <div id="shoma" class="member">
+            <img src="IMG_4210.JPG" class="login-icon">
+            <p class="name">しょうま</p>
+          </div>
+        </li>
+        <li>
+          <div id="ryutoku" class="member">
+            <img src="IMG_4211.JPG" class="login-icon">
+            <p class="name">りゅうとく</p>
+          </div>
+        </li>
+        <li>
+          <div id="ryuji" class="member">
+            <img src="IMG_4212.JPG" class="login-icon">
+            <p class="name">梅ちゃん</p>
+          </div>
+        </li>
+        <li>
+          <div id="close" class="close">
+            <p>閉じる</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="welcome" hidden>
+      <div>
+        <!-- <img src="IMG_4210.JPG">
+        <h1>🎉しょうまさんようこそ！🎉</h1> -->
+      </div>
+    </section>
+
+    <section id="contentList" hidden>
+      <h1>Content List</h1>
+      <ul>
+        <li>
+          <div id="list-omikuji">
+            <p class="setting">作成中</p>
+            <p>おみくじ</p>
+            <img src="おみくじ.jpg">
+          </div>
+        </li>
+        <li>
+          <div id="list-numbertuch">
+            <p class="setting">作成中</p>
+            <p>数字タッチ</p>
+            <img src="数字タッチ.jpg">
+          </div>
+        </li>
+        <li>
+          <div id="list-slot">
+            <p>スロットマシン</p>
+            <img src="スロットマシン.jpg">
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <div id="slot" hidden>
+      <img src="SlotImg/GOGO.png" id="gogo-lamp" class="dim">
+      <main>
+        <!-- <section class="panel">
+          <img src="SlotImg/seven.png">
+          <div class="stop">STOP</div>
+        </section>
+        <section class="panel">
+          <img src="SlotImg/cherry.png">
+          <div class="stop">STOP</div>
+        </section>
+        <section class="panel">
+          <img src="SlotImg/bell.png">
+          <div class="stop">STOP</div>
+        </section> -->
+      </main>
+
+      <div id="spin">SPIN</div>
+    </div>
+
+    <section id="comments" hidden>
+      <h1>コメント欄</h1>
+      <ul>
+        <li>
+          <time>2025/08/12</time>
+          <div id="profile">
+            <img src="IMG_4204.JPG" id="icon">
+            <span id="nickname">ニックネーム</span>
+          </div>
+          <p id="comment" class="bubble">コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。コメントです。</p>
+        </li>
+      </ul>
+      <form>
+        <input type="text">
+        <button>↑</button>
+      </form>
+    </section>
+
+    <section id="bye" hidden>
+      <div>
+        <h1>See you again!</h1>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
