@@ -29,6 +29,7 @@
   const contentList = document.getElementById('contentList');
   const comments = document.getElementById('comments');
   const bye = document.getElementById('bye');
+  const typing = document.getElementById('typing');
   const slot = document.getElementById('slot');
 
   loginPage.hidden = false;
@@ -36,6 +37,7 @@
   contentList.hidden = true;
   comments.hidden = true;
   bye.hidden = true;
+  typing.hidden = true;
   slot.hidden = true;
 
   const close = document.getElementById('close');
@@ -89,6 +91,204 @@
   const listOmikuji = document.getElementById('list-omikuji');
   const listNumbertuch = document.getElementById('list-numbertuch');
   const listSlot = document.getElementById('list-slot');
+  const listLyricsTyping = document.getElementById('list-lyrics-typing');
+
+
+  listLyricsTyping.addEventListener('click', () => {
+
+    const ginnnoryuunoseninotte = document.getElementById('ginnnoryuunoseninotte');
+    const loverain = document.getElementById('loverain');
+    const manatunokajitu = document.getElementById('manatunokajitu');
+
+    const lyricsSelection = document.getElementById('lyrics-selection');
+
+    lyricsSelection.hidden = false;
+
+    let words;
+    let wordKanas;
+
+    ginnnoryuunoseninotte.addEventListener('click', () => {
+      const ginnnoryuunoseninotteWords = [
+        'anoaozametauminokanatade',
+        'imamasanidarekagaitanndeiru',
+        'madatobenaihinatatimitaini',
+        'bokuhakonohirikiwonageiteiru',
+        'isogekanasimitubasanikaware',
+        'isogekizuatorasinbanninare',
+        'madatobenaihinatatimitaini',
+        'bokuhakonohirikiwonageiteiru',
+        'yumegamukaenikitekurerumade',
+        'huruetematterudakenokinou',
+        'asitabokuharyuunoasimotohegakewonobori',
+        'yobuyosaaikouze',
+        'ginnnoryuunoseninotte',
+        'todokeniyukouinotinosabakue',
+        'ginnnoryuunoseninotte',
+        'hakonndeikouamagumonouzuwo',
+      ];
+      const ginnnoryuunoseninotteWordKanas = [
+        'あの蒼ざめた海の彼方で',
+        '今まさに誰かが傷んでいる',
+        'まだ飛べない雛たちみたいに',
+        '僕はこの非力を嘆いている',
+        '急げ悲しみ翼に変われ',
+        '急げ傷跡羅針盤になれ',
+        'まだ飛べない雛たちみたいに',
+        '僕はこの非力を嘆いている',
+        '夢が迎えに来てくれるまで',
+        '震えて待っているだけだった昨日',
+        '明日僕は龍の足元へ崖を登り',
+        '呼ぶよさあ行こうぜ',
+        '銀の龍の背に乗って',
+        '届けに行こう命の砂漠へ',
+        '銀の龍の背に乗って',
+        '運んで行こう雨雲の渦を',
+      ];
+      words = ginnnoryuunoseninotteWords;
+      wordKanas = ginnnoryuunoseninotteWordKanas;
+
+      lyricsSelection.hidden = true;
+      typing.hidden = false;
+    })
+
+    loverain.addEventListener('click', () => {
+      const loverainWords = [
+        'tomaranaiamegakoigahurasetaamega',
+        'hutariwokinouhekaesanai',
+        'koorinokazenomannmannnakawohitorisusunndaumorenaiyou',
+        'kogoetahohowoimaazukeyousonotedeHold me, Baby',
+        'sizukanisaitakireinahananibokunokakugogamewokosuridasu',
+        'hutarideotitakoinomahouSpecial Lady kienaide',
+        'tukinisottomimamorareteruyounayawarakaiuzunonaka',
+        'mirainosinnwanikizamaresounamonogataritukuro',
+        'konomamakiminomunenitobikonndamama',
+        'ubaitaizuttonamidamosonohitomimo',
+        'tomaranaiamegakoigahurasetaamega',
+        'hutariwokinouhekaesanai',
+      ];
+      const loverainWordKanas = [
+        '止まらない雨が恋が降らせた雨が',
+        '二人を昨日へ返さない',
+        '氷の風の真ん真ん中をひとり進んだ埋もれないよう',
+        '凍えた頬を今あずけようその手で Hold me, Baby',
+        '静かに咲いたきれいな花に僕の覚悟が目をこすりだす',
+        '二人で落ちた恋の魔法 Special Lady 消えないで',
+        '月にそっと見守られるような柔らかい渦の中',
+        '未来の神話に刻まれそうな物語作ろう',
+        'このまま君の胸に飛び込んだまま',
+        '奪いいたいずっと涙もその瞳も',
+        '止まらない雨が恋が降らせた雨が',
+        '二人を昨日へ返さない',
+      ];
+      words = loverainWords;
+      wordKanas = loverainWordKanas;
+
+      lyricsSelection.hidden = true;
+      typing.hidden = false;
+    })
+
+    manatunokajitu.addEventListener('click', () => {
+      const manatunokajituWords = [
+        'namidagaahurerukanasiikisetuha',
+        'darekanidakaretayumewoniru',
+        'nakitaikimotihakotobanidekinai',
+        'konnyamotumetaiamegahuru',
+        'koraekirenakutetameikibakari',
+        'imamokonomuneninatuhameguru',
+        'sirokujityuumosukitoitte',
+        'yumenonakahetureteitte',
+        'wasurerarenai Heat and Soul',
+        'koeninaranai',
+        'sunanikaitanamaekesite',
+        'karahadokohekaerunoka',
+        'toorisugiyuku Love and Roll',
+        'aiwosonomamani',
+      ];
+      const manatunokajituWordKanas = [
+        '涙があふれる悲しい季節は',
+        '誰かに抱かれた夢を見る',
+        '泣きたい気持ちは言葉に出来ない',
+        '今夜も冷たい雨が降る',
+        'こらええきれなくてため息ばかり',
+        '今もこの胸に夏は巡る',
+        '四六時中も好きと言って',
+        '夢の中に連れて行って',
+        '忘れられない Heat and Soul',
+        '声にならない',
+        '砂に書いた名前消して',
+        '彼はどこへ帰るのか',
+        '通り過ぎ行く Love and Roll',
+        '愛をそのままに',
+      ];
+      words = manatunokajituWords;
+      wordKanas = manatunokajituWordKanas;
+
+      lyricsSelection.hidden = true;
+      typing.hidden = false;
+    })
+
+
+
+    function setWord() {
+      word = words.splice(0, 1)[0];
+      let wordKana = wordKanas.splice(0, 1)[0];
+      target.textContent = word;
+      kana.textContent = wordKana;
+      loc = 0;
+    }
+
+    let word;
+    let loc = 0;
+    let startTime = 0;
+    let isPlaying = false;
+    let missTyping = 0;
+    const target = document.getElementById('target');
+    const kana = document.getElementById('kana');
+
+    target.addEventListener('click', () => {
+      if (isPlaying === true) {
+        return;
+      }
+
+      isPlaying = true;
+      startTime = Date.now();
+      setWord();
+    })
+
+    document.addEventListener('keydown', e => {
+      if (e.key !== word[loc]) {
+        if (isPlaying === true) {
+          missTyping++;
+          result.textContent = `made a mistake ${missTyping} times!`;
+        }
+        return;
+      }
+      loc++;
+      target.textContent = '_'.repeat(loc) + word.substring(loc);
+
+      if (loc === word.length) {
+        if (words.length === 0) {
+          const elapsedTime = ((Date.now() - startTime) / 1000).toFixed(2);
+          const result = document.getElementById('result');
+          target.textContent = ``;
+          kana.textContent = ``;
+          result.textContent = `Finished! ${elapsedTime} second!`;
+          isPlaying = false;
+          return;
+        }
+
+        setWord();
+      }
+    });
+
+    loginPage.hidden = true;
+    welcome.hidden = true;
+    contentList.hidden = true;
+    comments.hidden = true;
+    bye.hidden = true;
+    slot.hidden = true;
+  });
+
 
   listSlot.addEventListener('click', () => {
 
